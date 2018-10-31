@@ -73,7 +73,8 @@ By default object properties are named based on their original object
 hierarchy. When this is set to false the objects properties are named based on
 the property that originally held that value, no matter where it falls in the
 hierarchy. e.g. Warning. Unflattening will no longer work, and if object
-property names collide they will be overwritten by the last entry
+property names collide they will be overwritten by the last entry. Also
+`delimiter` becomes irrelevent when this option is set to false. Default is `true`
 ``` javascript
 flatten({
     A: {

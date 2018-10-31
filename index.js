@@ -24,7 +24,7 @@ function flatten (target, opts) {
       )
 
       var newKey
-      if (!nestedNaming) {
+      if (!opts.nestedNaming) {
         newKey = key
       } else {
         newKey = prev
